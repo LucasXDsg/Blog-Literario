@@ -1,0 +1,25 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Posts" %>
+
+<h1>Lucas S. Blog</h1>
+<div class="button">
+  <%= link_to 'Voltar para a página inicial', root_path, class: 'btn btn-secondary' %>
+</div>
+
+<div id="posts" class="container">
+  <% @posts.each do |post| %>
+    <%= render post %>
+    <p>
+      <div class="button">
+        <%= link_to "Leia Mais!", post %>
+      </div>
+    </p>
+  <% end %>
+</div>
+
+<div class="button">
+  <%= link_to "Novo Post", new_post_path %>
+</div>
+
+<p>Blog By Lucas Belo</p>

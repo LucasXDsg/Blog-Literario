@@ -1,0 +1,26 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @post %>
+
+<div class="post-image">
+  <% image_filename = "folders/#{@post.id}.jpg" %>
+    <% if File.exist?(Rails.root.join('app', 'assets', 'images', image_filename)) %>
+    <%= image_tag image_filename %>
+    <% else %>
+      <p>Imagem não disponível.</p>
+    <% end %>
+</div>
+
+<div>
+<div class="button">
+  <%= link_to "Editar Postagem", edit_post_path(@post) %>
+  </div>
+
+  <div class="button">
+  <%= link_to "Retornar aos Posts", posts_path %>
+  </div>
+
+  <%= button_to "Deletar este Post", @post, method: :delete %>
+</div>
+
+<p>Blog By Lucas Belo</p>

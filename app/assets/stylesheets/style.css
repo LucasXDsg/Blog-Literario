@@ -1,0 +1,80 @@
+/*Font Family*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*Global*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+    line-height: 1.6; /* Melhora a legibilidade */
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif; /* Fonte para os títulos */
+    color: #ffffff; /* Títulos brancos */
+}
+
+a {
+    color: #def5f6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 800px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: #1e1e1e; /* Fundo do container */
+}
+
+p {
+    margin: 10px 0; /* Espaçamento entre parágrafos */
+}
+
+/* Imagens */
+.post-image {
+    text-align: center; /* Centraliza a imagem */
+    margin-top: 15px; /* Adiciona espaço acima da imagem */
+}
+
+.post-image img {
+    max-width: 21%; /* Faz com que a imagem não ultrapasse o tamanho da div */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 4px;
+}
+
+/* Button */
+.button {
+  background-color: #319194;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #18392f;
+}
